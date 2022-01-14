@@ -47,6 +47,7 @@ class AdvertisementSeeder extends Seeder
                 'city' => 'Lomé',
                 'street' => 'Adidogomé',
                 'advertiser_id' => 1,
+                'created_at' => now()->yesterday()
             ],
             [
                 'label' => 'TABLE DE CAMPING',
@@ -77,6 +78,7 @@ class AdvertisementSeeder extends Seeder
                 'city' => 'Lomé',
                 'street' => 'Tokoin',
                 'advertiser_id' => 1,
+                'created_at' => now()->subDays(3)
             ],
             [
                 'label' => 'APPAREIL À FONDUE EN BOIS',
@@ -102,6 +104,7 @@ class AdvertisementSeeder extends Seeder
                 'city' => 'Lomé',
                 'street' => 'Logogomé',
                 'advertiser_id' => 2,
+                'created_at' => now()->subDays(6)
             ]
         ];
 
