@@ -1,9 +1,8 @@
 @extends('layouts.app')
+
 @section('title') Détails de l'annonce @endsection
 
 @section('content')
-
-    @include('shared.header')
 
     <div class="row featurette">
         <div class="col-md-5">
@@ -81,7 +80,5 @@
             </p>
         </div>
     </div>
-
-    @include('shared.footer')
 
 @endsection
