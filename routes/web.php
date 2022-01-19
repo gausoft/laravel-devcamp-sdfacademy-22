@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/advertisements/{slug}', [AdvertisementController::class, 'show'])->name('ads.show');
+Route::get('/publish', [AdvertisementController::class, 'create'])->name('ads.create');
+Route::post('/publish', [AdvertisementController::class, 'store'])->name('ads.store')->middleware('auth');
+
+Auth::routes();
